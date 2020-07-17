@@ -4,7 +4,7 @@ function feetToMile(feet)
         console.log("Invalid feet input");
     }
     else{
-            Mile=feet/5280;
+            var Mile=feet/5280;
             return Mile;  
         } 
 }
@@ -15,7 +15,7 @@ function woodCalculator(chair, table, Bedstead)
         console.log("Negative input is invalid");
     }
     else{
-        TotalNeededWood=chair*1+table*3+Bedstead*5;
+        var TotalNeededWood=chair*1+table*3+Bedstead*5;
         return TotalNeededWood;
     }
    
@@ -48,15 +48,15 @@ function tinyFriend(friends)
         console.log("You have no friend");
     }
     else{
-        tiny=friends[0].length;
+        var tiny=friends[0].length;
         for(var i=0;i<friends.length;i++){
         var others=friends[i].length;
         if(others<tiny){
             tiny=others;
-            tinyFrnd=friends[i];
+            var tinyFrnd=friends[i];
             }
         else{
-                tinyFrnd=friends[0];
+                var tinyFrnd=friends[0];
             }
         }
         return tinyFrnd;
